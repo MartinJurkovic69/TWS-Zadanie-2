@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Martin Jurkovič</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <h1>Martin Jurkovič</h1>
+            </a>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul>
+                    <li><a href="index.html">Úvod</a></li>
+                    <li><a href="gallery.html">Galéria</a></li>
+                    <li><a href="about.html">O mne</a></li>
+                    <li class="active"><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Kontakt</h1>
+                <p>Máte otázky? Neváhajte ma kontaktovať</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-info">
+                    <h2>Kontaktné informácie</h2>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Adresa</h3>
+                            <p>Hlavná ulica 123, 821 05 Bratislava, Slovensko</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Telefón</h3>
+                            <p>+421 123 456 789</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>martin.jurkovic@example.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Pracovné hodiny</h3>
+                            <p>Pondelok - Piatok: 9:00 - 17:00</p>
+                            <p>Sobota - Nedeľa: Zatvorené</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Sledujte ma</h3>
+                        <div>
+                            <a href="https://www.instagram.com/mato._.jurkovic?igsh=OGNuYXphbXl2NWxn"><i class="fab fa-instagram"></i></a>
+                            <a href="https://github.com/MartinJurkovic69"><i class="fab fa-github"></i></a>
+                            <a href="https://discord.gg/yR8jnFjB"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Napíšte mi</h2>
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Meno *</label>
+                            <input type="text" id="name" name="name" required minlength="5" maxlength="128">
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required maxlength="256">
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefón</label>
+                            <input type="tel" id="phone" name="phone" minlength="7">
+                            <span class="error-message" id="phone-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Predmet *</label>
+                            <input type="text" id="subject" name="subject" required minlength="3" maxlength="128">
+                            <span class="error-message" id="subject-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Správa *</label>
+                            <textarea id="message" name="message" required minlength="5"></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        <button type="submit" class="btn">Odoslať správu</button>
+                    </form>
+                    <div id="form-success" class="form-success">
+                        Ďakujeme za správu! Čoskoro vás budem kontaktovať.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2>Kde ma nájdete</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.347892839508!2d21.23435231568796!3d49.16896197932376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473f3f3f3f3f3f3f%3A0x3f3f3f3f3f3f3f3f!2sPlze%C5%88sk%C3%A1%201%2C%20080%2001%20Pre%C5%A1ov!5e0!3m2!1ssk!2ssk!4v1620000000000!5m2!1ssk!2ssk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Martin Jurkovič. Všetky práva vyhradené.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/mato._.jurkovic?igsh=OGNuYXphbXl2NWxn"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/MartinJurkovic69"><i class="fab fa-github"></i></a>
+                <a href="https://discord.gg/yR8jnFjB"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
